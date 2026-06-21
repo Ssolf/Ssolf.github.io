@@ -1,1 +1,438 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Portafolio de Soledad Fernández, Técnico en Gastronomía en proceso de reinvención hacia el desarrollo Full Stack Java.">
+	<title>Soledad Fernández · Portafolio</title>
 
+	<!-- Tipografías: Fraunces (display) + Inter (texto) -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<!-- ======================
+		BARRA DE NAVEGACIÓN
+	======================= -->
+	<header class="site-header">
+		<nav class="navbar" aria-label="Navegación principal">
+			<a class="navbar__brand" href="#inicio">Soledad Fernández</a>
+
+			<button
+				type="button"
+				class="navbar__toggle"
+				id="navToggle"
+				aria-expanded="false"
+				aria-controls="navMenu"
+				aria-label="Abrir menú de navegación"
+			>
+				<span class="navbar__toggle-bar"></span>
+				<span class="navbar__toggle-bar"></span>
+				<span class="navbar__toggle-bar"></span>
+			</button>
+
+			<ul class="navbar__menu" id="navMenu">
+				<li><a class="navbar__link" href="#inicio">Inicio</a></li>
+				<li><a class="navbar__link" href="#sobre-mi">Sobre mí</a></li>
+				<li><a class="navbar__link" href="#tecnologias">Tecnologías</a></li>
+				<li><a class="navbar__link" href="#aprendiendo">Aprendiendo</a></li>
+				<li><a class="navbar__link" href="#trayectoria">Trayectoria</a></li>
+				<li><a class="navbar__link" href="#proyectos">Proyectos</a></li>
+				<li><a class="navbar__link" href="#contacto">Contacto</a></li>
+				<li>
+					<button type="button" class="theme-toggle" id="themeToggle" aria-pressed="false" aria-label="Activar modo oscuro">
+						<svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+							<circle cx="12" cy="12" r="4"></circle>
+							<path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+						</svg>
+						<svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+							<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+						</svg>
+					</button>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<main id="contenido-principal">
+
+		<!-- ======================
+			HERO
+		======================= -->
+		<section id="inicio" class="hero">
+			<div class="hero__content">
+				<p class="hero__eyebrow">Portafolio personal</p>
+				<h1 class="hero__title">
+					Hola, soy <span class="hero__name">Soledad Fernández</span>
+				</h1>
+				<p class="hero__role">Técnico en Gastronomía · Estudiante Full Stack Java Trainee (SENCE)</p>
+				<p class="hero__pitch">
+					Estoy en proceso de reinvención profesional: vengo de la cocina y avanzo paso a paso
+					hacia el desarrollo web, con el objetivo de combinar ambos mundos.
+				</p>
+
+				<div class="hero__actions">
+					<a href="#proyectos" class="btn btn--primary">Ver proyectos</a>
+					<a href="#contacto" class="btn btn--ghost">Contactarme</a>
+					<a href="https://github.com/Ssolf" target="_blank" rel="noopener noreferrer" class="btn btn--icon" aria-label="Visitar GitHub de Soledad Fernández">
+						<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+							<path d="M12 .5C5.73.5.75 5.48.75 11.75c0 4.95 3.21 9.14 7.67 10.62.56.1.76-.24.76-.54 0-.27-.01-1.16-.02-2.1-3.12.68-3.78-1.34-3.78-1.34-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.68.08-.68 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.63 1.22 3.27.93.1-.73.39-1.22.71-1.5-2.49-.28-5.11-1.25-5.11-5.55 0-1.22.44-2.22 1.16-3-.12-.28-.5-1.42.11-2.96 0 0 .95-.3 3.11 1.15a10.8 10.8 0 0 1 5.66 0c2.16-1.45 3.11-1.15 3.11-1.15.61 1.54.23 2.68.11 2.96.72.78 1.16 1.78 1.16 3 0 4.31-2.63 5.27-5.13 5.54.4.35.76 1.04.76 2.1 0 1.52-.01 2.74-.01 3.11 0 .3.2.65.77.54A11.26 11.26 0 0 0 23.25 11.75C23.25 5.48 18.27.5 12 .5Z"/>
+						</svg>
+						GitHub
+					</a>
+					<a href="https://www.linkedin.com/in/soledad-fernandez-vega/" target="_blank" rel="noopener noreferrer" class="btn btn--icon" aria-label="Visitar LinkedIn de Soledad Fernández">
+						<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+							<path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/>
+						</svg>
+						LinkedIn
+					</a>
+				</div>
+			</div>
+
+			<div class="hero__visual">
+				<div class="hero__avatar">
+					<img
+						id="miAvatar"
+						src="img/perfil.png"
+						alt="Foto de perfil de Soledad Fernández"
+						width="220"
+						height="220"
+					>
+				</div>
+				<div class="hero__chip">De la cocina al código</div>
+			</div>
+		</section>
+
+		<!-- ======================
+			SOBRE MÍ
+		======================= -->
+		<section id="sobre-mi" class="section">
+			<div class="section__head">
+				<p class="section__eyebrow">01</p>
+				<h2 class="section__title">Sobre mí</h2>
+			</div>
+
+			<div class="about">
+				<div class="about__text">
+					<p>
+						Soy Técnico en Gastronomía y actualmente curso el programa Full Stack Java Trainee
+						de SENCE. Estoy en pleno proceso de reinvención profesional hacia el desarrollo web,
+						construyendo desde cero las bases que necesito para trabajar en tecnología.
+					</p>
+					<p>
+						De mi experiencia en cocina llevo conmigo el manejo de tiempos, el trabajo bajo presión
+						y la importancia del trabajo en equipo para que un proyecto salga bien. Esas mismas
+						habilidades las estoy aplicando ahora a mi formación como desarrolladora.
+					</p>
+					<p>
+						Mi meta es desarrollarme como Fullstack Java y, a futuro, encontrar la forma de unir
+						gastronomía y tecnología.
+					</p>
+				</div>
+
+				<div class="about__highlights">
+					<div class="highlight-card">
+						<span class="highlight-card__label">Formación</span>
+						<p class="highlight-card__value">Full Stack Java Trainee</p>
+						<span class="highlight-card__meta">SENCE</span>
+					</div>
+					<div class="highlight-card">
+						<span class="highlight-card__label">Profesión base</span>
+						<p class="highlight-card__value">Técnico en Gastronomía</p>
+						<span class="highlight-card__meta">Cocina nacional e internacional</span>
+					</div>
+					<div class="highlight-card">
+						<span class="highlight-card__label">Objetivo</span>
+						<p class="highlight-card__value">Fullstack Java</p>
+						<span class="highlight-card__meta">Gastronomía + tecnología</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ======================
+			TECNOLOGÍAS ACTUALES
+		======================= -->
+		<section id="tecnologias" class="section section--alt">
+			<div class="section__head">
+				<p class="section__eyebrow">02</p>
+				<h2 class="section__title">Tecnologías actuales</h2>
+				<p class="section__lead">
+					Niveles descritos con honestidad: reflejan en qué punto estoy hoy de mi proceso de aprendizaje.
+				</p>
+			</div>
+
+			<ul class="skills" role="list">
+				<li class="skill">
+					<div class="skill__top">
+						<span class="skill__name">HTML</span>
+						<span class="skill__level">En desarrollo</span>
+					</div>
+					<div class="skill__bar" role="img" aria-label="Nivel HTML: en desarrollo, aproximadamente 65 por ciento">
+						<span class="skill__fill" style="--nivel: 65%;"></span>
+					</div>
+				</li>
+				<li class="skill">
+					<div class="skill__top">
+						<span class="skill__name">CSS</span>
+						<span class="skill__level">En desarrollo</span>
+					</div>
+					<div class="skill__bar" role="img" aria-label="Nivel CSS: en desarrollo, aproximadamente 60 por ciento">
+						<span class="skill__fill" style="--nivel: 60%;"></span>
+					</div>
+				</li>
+				<li class="skill">
+					<div class="skill__top">
+						<span class="skill__name">JavaScript</span>
+						<span class="skill__level">Fundamentos</span>
+					</div>
+					<div class="skill__bar" role="img" aria-label="Nivel JavaScript: fundamentos, aproximadamente 40 por ciento">
+						<span class="skill__fill" style="--nivel: 40%;"></span>
+					</div>
+				</li>
+				<li class="skill">
+					<div class="skill__top">
+						<span class="skill__name">Java</span>
+						<span class="skill__level">Fundamentos</span>
+					</div>
+					<div class="skill__bar" role="img" aria-label="Nivel Java: fundamentos, aproximadamente 35 por ciento">
+						<span class="skill__fill" style="--nivel: 35%;"></span>
+					</div>
+				</li>
+			</ul>
+		</section>
+
+		<!-- ======================
+			ACTUALMENTE APRENDIENDO
+		======================= -->
+		<section id="aprendiendo" class="section">
+			<div class="section__head">
+				<p class="section__eyebrow">03</p>
+				<h2 class="section__title">Actualmente aprendiendo</h2>
+			</div>
+
+			<div class="learning">
+				<article class="learning-card">
+					<h3 class="learning-card__title">Java</h3>
+					<p class="learning-card__desc">
+						Profundizando en lógica de programación, estructuras de datos y programación
+						orientada a objetos como base del desarrollo backend.
+					</p>
+				</article>
+				<article class="learning-card">
+					<h3 class="learning-card__title">Fundamentos de JavaScript</h3>
+					<p class="learning-card__desc">
+						Reforzando manejo del DOM, eventos y buenas prácticas para escribir
+						JavaScript modular y legible.
+					</p>
+				</article>
+				<article class="learning-card">
+					<h3 class="learning-card__title">Desarrollo Full Stack</h3>
+					<p class="learning-card__desc">
+						Avanzando dentro del programa Full Stack Java Trainee de SENCE hacia
+						arquitectura backend y bases de datos relacionales.
+					</p>
+				</article>
+			</div>
+		</section>
+
+		<!-- ======================
+			TRAYECTORIA: EXPERIENCIA + EDUCACIÓN
+		======================= -->
+		<section id="trayectoria" class="section section--alt">
+			<div class="section__head">
+				<p class="section__eyebrow">04</p>
+				<h2 class="section__title">Experiencia y formación</h2>
+			</div>
+
+			<div class="trayectoria-grid">
+				<div class="timeline-block">
+					<h3 class="timeline-block__title">Experiencia laboral</h3>
+					<ol class="timeline">
+						<li class="timeline__item">
+							<p class="timeline__period">Nov. 2025 — Actualidad</p>
+							<h4 class="timeline__role">Desarrolladora Full Stack Java — Freelance</h4>
+							<p class="timeline__desc">Desarrollo de aplicaciones web.</p>
+						</li>
+						<li class="timeline__item">
+							<p class="timeline__period">Abr. 2023 — Sept. 2024</p>
+							<h4 class="timeline__role">Team Leader área Food — IKEA Mall Plaza Oeste</h4>
+							<p class="timeline__desc">Coordinación de equipo y operaciones del área de alimentos.</p>
+						</li>
+					</ol>
+				</div>
+
+				<div class="timeline-block">
+					<h3 class="timeline-block__title">Formación académica</h3>
+					<ol class="timeline">
+						<li class="timeline__item">
+							<p class="timeline__period">Oct. 2025 — Jul. 2026</p>
+							<h4 class="timeline__role">Full Stack Java Trainee — SENCE</h4>
+							<p class="timeline__desc">Lógica en Java, Spring Boot, bases de datos relacionales y arquitectura MVC.</p>
+						</li>
+						<li class="timeline__item">
+							<p class="timeline__period">Mar. 2019 — Ene. 2021</p>
+							<h4 class="timeline__role">Técnico en Gastronomía</h4>
+							<p class="timeline__desc">Cocina nacional e internacional.</p>
+						</li>
+					</ol>
+				</div>
+			</div>
+		</section>
+
+		<!-- ======================
+			PROYECTOS
+		======================= -->
+		<section id="proyectos" class="section">
+			<div class="section__head">
+				<p class="section__eyebrow">05</p>
+				<h2 class="section__title">Proyectos</h2>
+				<p class="section__lead">
+					Ejercicios y proyectos desarrollados durante el bootcamp Full Stack Java de SENCE,
+					disponibles en mi GitHub.
+				</p>
+			</div>
+
+			<div class="projects">
+				<a class="project-card" href="https://github.com/Ssolf/proyectoGit" target="_blank" rel="noopener noreferrer">
+					<h3 class="project-card__title">proyectoGit</h3>
+					<p class="project-card__desc">Proyecto grupal del curso, donde está mi página personal de portafolio.</p>
+					<span class="project-card__link">Ver repositorio →</span>
+				</a>
+				<a class="project-card" href="https://github.com/Ssolf/HTML-perfil" target="_blank" rel="noopener noreferrer">
+					<h3 class="project-card__title">HTML-perfil</h3>
+					<p class="project-card__desc">Ejercicio de maquetación de un perfil con HTML y CSS.</p>
+					<span class="project-card__link">Ver repositorio →</span>
+				</a>
+				<a class="project-card" href="https://github.com/Ssolf/MiPrimerSpring" target="_blank" rel="noopener noreferrer">
+					<h3 class="project-card__title">MiPrimerSpring</h3>
+					<p class="project-card__desc">Primeros pasos con Spring Boot durante el módulo de backend en Java.</p>
+					<span class="project-card__link">Ver repositorio →</span>
+				</a>
+				<a class="project-card" href="https://github.com/Ssolf/MiPrimerJEEEx" target="_blank" rel="noopener noreferrer">
+					<h3 class="project-card__title">MiPrimerJEEEx</h3>
+					<p class="project-card__desc">Ejercicios introductorios a Java Enterprise Edition.</p>
+					<span class="project-card__link">Ver repositorio →</span>
+				</a>
+				<a class="project-card" href="https://github.com/Ssolf/PrimerProyectoJava" target="_blank" rel="noopener noreferrer">
+					<h3 class="project-card__title">PrimerProyectoJava</h3>
+					<p class="project-card__desc">Clases de Java nativo del curso RTD FSJ 0050-1 de Kibernum.</p>
+					<span class="project-card__link">Ver repositorio →</span>
+				</a>
+				<a class="project-card" href="https://github.com/Ssolf/EscuelaKenpo" target="_blank" rel="noopener noreferrer">
+					<h3 class="project-card__title">EscuelaKenpo</h3>
+					<p class="project-card__desc">Proyecto de práctica desarrollado durante el bootcamp.</p>
+					<span class="project-card__link">Ver repositorio →</span>
+				</a>
+			</div>
+
+			<p class="projects__note">
+				Todos estos repositorios son ejercicios y proyectos de práctica realizados en el marco
+				del bootcamp Full Stack Java de SENCE (Kibernum). Puedes ver el detalle completo en mi
+				<a href="https://github.com/Ssolf" target="_blank" rel="noopener noreferrer">perfil de GitHub</a>.
+			</p>
+		</section>
+
+		<!-- ======================
+			CONTACTO
+		======================= -->
+		<section id="contacto" class="section section--alt">
+			<div class="section__head">
+				<p class="section__eyebrow">06</p>
+				<h2 class="section__title">Contacto</h2>
+				<p class="section__lead">¿Tienes una consulta o propuesta? Escríbeme por cualquiera de estos canales.</p>
+			</div>
+
+			<div class="contact">
+				<form id="formContacto" class="contact-form" novalidate>
+					<div class="form-field">
+						<label for="nombre">Nombre completo</label>
+						<input type="text" id="nombre" name="nombre" required minlength="3" autocomplete="name">
+						<p class="form-field__error" data-error-for="nombre">Ingresa tu nombre (mínimo 3 caracteres).</p>
+					</div>
+
+					<div class="form-field">
+						<label for="email">Correo electrónico</label>
+						<input type="email" id="email" name="email" required autocomplete="email">
+						<p class="form-field__error" data-error-for="email">Ingresa un correo electrónico válido.</p>
+					</div>
+
+					<div class="form-field">
+						<label for="mensaje">Mensaje</label>
+						<textarea id="mensaje" name="mensaje" rows="4" required minlength="10"></textarea>
+						<p class="form-field__error" data-error-for="mensaje">Escribe un mensaje (mínimo 10 caracteres).</p>
+					</div>
+
+					<button type="submit" class="btn btn--primary btn--block">Enviar mensaje</button>
+					<p class="contact-form__feedback" id="feedbackExito" role="status" hidden>¡Mensaje enviado con éxito!</p>
+				</form>
+
+				<ul class="contact-channels" role="list">
+					<li>
+						<a class="contact-channel" href="mailto:soledad-fernandez@live.cl">
+							<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg>
+							<span>soledad-fernandez@live.cl</span>
+						</a>
+					</li>
+					<li>
+						<a class="contact-channel" href="https://api.whatsapp.com/send?phone=56977043452&text=Hola!%20quisiera%20saber%20mas%20sobre%20digitalizar%20mi%20negocio" target="_blank" rel="noopener noreferrer">
+							<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.87.51 3.62 1.4 5.13L2 22l5.12-1.5a9.8 9.8 0 0 0 4.92 1.32h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm0 18.06h-.01a8.13 8.13 0 0 1-4.15-1.14l-.3-.18-3.04.89.9-2.96-.2-.31a8.1 8.1 0 0 1-1.25-4.45c0-4.5 3.66-8.16 8.16-8.16 4.49 0 8.15 3.65 8.15 8.16 0 4.5-3.66 8.15-8.16 8.15Zm4.47-6.1c-.24-.12-1.45-.72-1.68-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.78.96-.14.16-.29.18-.53.06-1.43-.72-2.37-1.28-3.31-2.9-.25-.43.25-.4.71-1.34.08-.16.04-.3-.03-.42-.07-.12-.6-1.46-.83-2-.22-.53-.45-.46-.62-.47-.16-.01-.35-.01-.54-.01-.19 0-.49.07-.75.35-.26.28-1 1-1 2.43 0 1.43 1.04 2.81 1.19 3 .14.19 1.97 3.01 4.79 4.1 2.82 1.1 2.82.73 3.33.69.5-.05 1.62-.66 1.85-1.3.23-.64.23-1.18.16-1.3-.07-.12-.24-.18-.48-.3Z"/></svg>
+							<span>WhatsApp</span>
+						</a>
+					</li>
+					<li>
+						<a class="contact-channel" href="https://www.instagram.com/ssol.fernandezv/" target="_blank" rel="noopener noreferrer">
+							<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1"></circle></svg>
+							<span>Instagram</span>
+						</a>
+					</li>
+					<li>
+						<a class="contact-channel" href="https://github.com/Ssolf" target="_blank" rel="noopener noreferrer">
+							<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+								<path d="M12 .5C5.73.5.75 5.48.75 11.75c0 4.95 3.21 9.14 7.67 10.62.56.1.76-.24.76-.54 0-.27-.01-1.16-.02-2.1-3.12.68-3.78-1.34-3.78-1.34-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.68.08-.68 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.63 1.22 3.27.93.1-.73.39-1.22.71-1.5-2.49-.28-5.11-1.25-5.11-5.55 0-1.22.44-2.22 1.16-3-.12-.28-.5-1.42.11-2.96 0 0 .95-.3 3.11 1.15a10.8 10.8 0 0 1 5.66 0c2.16-1.45 3.11-1.15 3.11-1.15.61 1.54.23 2.68.11 2.96.72.78 1.16 1.78 1.16 3 0 4.31-2.63 5.27-5.13 5.54.4.35.76 1.04.76 2.1 0 1.52-.01 2.74-.01 3.11 0 .3.2.65.77.54A11.26 11.26 0 0 0 23.25 11.75C23.25 5.48 18.27.5 12 .5Z"/>
+							</svg>
+							<span>GitHub</span>
+						</a>
+					</li>
+					<li>
+						<a class="contact-channel" href="https://www.linkedin.com/in/soledad-fernandez-vega/" target="_blank" rel="noopener noreferrer">
+							<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+								<path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/>
+							</svg>
+							<span>LinkedIn</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+	</main>
+
+	<!-- ======================
+		BOTÓN VOLVER ARRIBA
+	======================= -->
+	<button type="button" id="backToTop" class="back-to-top" aria-label="Volver al inicio de la página" hidden>
+		<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+			<path d="M12 19V5M5 12l7-7 7 7"></path>
+		</svg>
+	</button>
+
+	<!-- ======================
+		FOOTER
+	======================= -->
+	<footer class="site-footer">
+		<p>Creado y desarrollado por Soledad Fernández (Ssolf). Todos los derechos reservados &copy; <span id="anioActual"></span>.</p>
+		<p class="site-footer__links">
+			<a href="https://github.com/Ssolf" target="_blank" rel="noopener noreferrer">GitHub</a>
+			·
+			<a href="https://www.linkedin.com/in/soledad-fernandez-vega/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+		</p>
+	</footer>
+
+	<script src="js/script.js"></script>
+</body>
+</html>
